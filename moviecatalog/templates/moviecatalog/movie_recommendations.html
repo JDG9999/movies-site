@@ -1,0 +1,16 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h1>Recommended movies</h1>
+{% if movie_list %}
+<ul>
+    {% for movie in movie_list %}
+    <li>
+        <a href="{{ movie.get_absolute_url }}">{{ movie.title }}</a> - ({{movie.director}},{{movie.year}})
+    </li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>There are no recommended movies at the moment.</p>
+{% endif %}
+{% endblock %}
