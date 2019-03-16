@@ -1,0 +1,8 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h1>OMNIBNK Movies</h1>
+<p>Welcome to the internal page of OMNIBNK that helps you manage your favorite movies!</p>
+
+<p>Currently, our site holds information about <strong>{{ num_movies }}</strong> movie{{ num_movies|pluralize }}.</p>
+{% endblock %}
