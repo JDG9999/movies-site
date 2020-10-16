@@ -1,4 +1,4 @@
-# Omnibnk movies manager
+# Movies manager
 A django website for simple user control and CRUD operations regarding movies.
 
 ## Usage and description
