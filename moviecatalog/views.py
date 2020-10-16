@@ -14,7 +14,6 @@ from .models import Movie
 
 def index(request):
     """View function for home page of site."""
-
     # Generate counts of the movies
     num_movies = Movie.objects.all().count()
     context = {
